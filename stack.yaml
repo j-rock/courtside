@@ -1,0 +1,9 @@
+flags: {}
+packages:
+extra-deps:
+  - SFML-0.2.0.0
+  - SFML-control-0.2.0.2
+extra-package-dbs: []
+resolver: lts-6.5
+ghc-options:
+    SFML: -fsimpl-tick-factor=200000
