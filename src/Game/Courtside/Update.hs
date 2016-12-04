@@ -20,7 +20,6 @@ update :: GameState -> SF.Time -> [SF.SFEvent] -> SFML (Maybe GameState)
 update m dt _ =
     do m' <- updateStateT m $ do
                  boolM exitEvent setExit $ do
-                     changeSpeed dt
                      tryMoveAthlete dt
                      updateCamera
        decideToExit m'
